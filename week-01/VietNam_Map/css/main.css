@@ -1,0 +1,47 @@
+*
+{
+    box-sizing: border-box;
+
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+*:not(body)
+{
+
+    width: inherit;
+    max-width: 100%;
+}
+
+body
+{
+    width: 99%;
+}
+
+div[data-alias="X-container"]
+{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+div[data-alias="X-content"]
+{
+    visibility: hidden;
+
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+
+    padding: calc(max(15px, 1%));
+
+    border-style: dashed;
+    border-width: 2.5px;
+    border-color: orange;
+
+    border-radius: 15px;
+
+    align-items: center;
+
+    vertical-align: middle;
+}

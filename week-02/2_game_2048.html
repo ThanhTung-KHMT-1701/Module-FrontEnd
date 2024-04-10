@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThanhTung-KHMT-1701</title>
+    <style>
+        div[class="game-2048-container"]
+        {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 5px;
+
+            width: 400px;
+            height: 400px;
+        }
+
+        div[class="game-2048-item"]
+        {
+            background-color: dodgerblue;
+            color: white;
+            padding: 5px;
+
+            text-align: center;
+            vertical-align: middle;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let data = 
+            [
+                16,0,0,4,
+                128, 16, 0, 0,
+                32, 64, 2, 0,
+                16, 8, 8, 2
+            ]
+
+        let item = ``
+        for (let number of data)
+        {
+            item += `<div class="game-2048-item" style="opacity: ${Math.log(number) / Math.log(2048)};">${(number === 0 ? "" : number)}</div>`
+        }
+        let container = `<div class="game-2048-container">${item}</div>`
+
+            document.write(container)
+    </script>
+</body>
+</html>

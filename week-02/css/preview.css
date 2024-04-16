@@ -1,0 +1,37 @@
+img
+{
+    position: absolute;
+    top: 0.1em;
+    left: 1em;
+
+    max-width: 32px;
+}
+
+/*
+FullName
+ID
+Subject
+NumberCredit
+DataDate
+TotalCredit
+Score
+*/
+
+div[class="PREVIEW"]
+{
+    margin-top: 3em;
+
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 3fr 0.5fr 2fr 0.5fr 0.5fr;
+
+    gap: 1em;
+}
+
+div[class="PREVIEW"] > *
+{
+    padding: 0.5em;
+
+    border: 0.1em dashed gray;
+    
+    background-color: ghostwhite;
+}

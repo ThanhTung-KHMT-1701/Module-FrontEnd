@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ThanhTung-Homework-week-02</title>
+    
+    <link rel="stylesheet" href="css/thanhtung.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/preview.css">
+    <link rel="stylesheet" href="css/download.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <p>ThanhTung-Homework-week-02</p>
+    <form action="" method="post">
+        <div data-alias="information-student-container">
+            <p class="title">Thông tin sinh viên</p>
+
+            <p class="field">Họ và tên</p>
+            <input type="text" name="FullName" id="FullName">
+
+            <p class="field">Mã số sinh viên</p>
+            <input type="text" name="ID" id="ID">
+        </div>
+
+
+
+        <div data-alias="information-subject-container">
+            <p class="title">Thông tin học phần</p>
+
+            <p class="field">Học phần</p>
+            <input type="text" name="subject" id="subject">
+
+            <p class="field">Số tín chỉ</p>
+            <input type="number" name="numberCredit" id="numberCredit">
+        </div>
+
+
+
+        <div data-alias="data-date-container">
+            <p class="title">Dữ liệu điểm danh - Ngày nghỉ học</p>
+
+            <div class="data-date-item">
+                <input type="date" name="data-date">
+                <input type="range" name="data-lesson" min="0" step="1" max="4">
+                <p class="data-lesson" data-value="2">2 tiết</p>
+            </div>
+
+            <div class="button">ADD</div>
+        </div>
+
+
+
+        <input type="submit" value="NEXT-TO">
+    </form>
+
+    <img 
+        src="img/eye.svg" 
+        alt="preview">
+
+    <div class="PREVIEW"></div>
+
+    <script src="script/insertData.js"></script>
+    <script src="script/preview.js"></script>
 </body>
 </html>

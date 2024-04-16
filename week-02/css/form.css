@@ -1,0 +1,142 @@
+form
+{
+    display: flex;
+    flex-direction: column;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 90%;
+
+    padding: 2.5%;
+
+    background-color: dodgerblue;
+}
+
+form > div[data-alias$="container"]
+{
+    padding: 10px;
+    margin-bottom: 2em;
+    border-radius: 5px;
+
+    background-color: azure;
+}
+
+form > div[data-alias$="container"] > p:not(:nth-child(1))
+{
+    margin-bottom: 0.25em;
+}
+
+form > div[data-alias$="container"] > input:not(:last-child)
+{
+    margin-bottom: 1em;
+}
+
+form > div[data-alias$="container"] > input
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+
+    padding: 1em;
+    border: 0;
+
+    border-radius: 1em;
+
+    color: white;
+    background-color: lightslategray;
+}
+
+form > div[data-alias$="container"] > input:focus
+{
+    outline: none;
+    background-color: black;
+}
+
+form > div[data-alias$="container"] > p[class="field"]
+{
+    text-indent: 1em;
+    color: black;
+}
+
+p[class="title"]
+{
+    text-align: center;
+    text-transform: uppercase;
+
+    font-weight: bold;
+    font-size: 1em;
+
+    margin-bottom: 2.5em;
+}
+
+div[class="button"]
+{
+    text-align: center;
+    
+    background-color: darkorange;
+    color: white;
+
+    width: fit-content;
+
+    padding: 0.5em;
+    border-radius: 1em;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 5em;
+}
+
+input[type="submit"]
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    text-align: center;
+    
+    background-color: limegreen;
+    color: white;
+
+    padding: 1em;
+}
+
+div[class="data-date-item"]
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 5%;
+
+    margin-bottom: 1em;
+}
+
+input[type="date"][name="data-date"]
+{
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+
+    padding: 1em;
+
+    color: black;
+    background-color: ghostwhite;
+
+    border: 0.1em dashed white;
+}
+
+input[type="date"][name="data-date"]:focus
+{
+    outline: none;
+
+    border: 0.1em dashed darkblue;
+}
+
+p[class="data-lesson"]
+{
+    text-align: center;
+
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+
+    padding: 1em;
+
+    background-color: ghostwhite;
+}

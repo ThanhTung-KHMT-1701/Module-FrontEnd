@@ -5,12 +5,10 @@
 
 let NumberDevice = "ThanhTung"
 
-// if (new RegExp((/^[0-9]+$/)).test(NumberDevice) === false)
-// {
-//     NumberDevice = prompt("Bạn hãy nhập vào số thiết bị điện có trong gia đình")
-// }
-
-NumberDevice = 3
+if (new RegExp((/^[0-9]+$/)).test(NumberDevice) === false)
+{
+    NumberDevice = prompt("Bạn hãy nhập vào số thiết bị điện có trong gia đình")
+}
 
 class ThietBi
 {
